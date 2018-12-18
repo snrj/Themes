@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px) {
+	.sayfaayar {padding:0;width: 100%;}
+	[class*="col-"] {padding:0;margin:0;}
+	.giris{float:left;}
+	div.col-1-5 a img.logost{float:left;}
+	.gir a:link{line-height:50px;}
+	nav {font-size:13px;}
+	nav a:link{padding:0;}
+	nav ul li#button_home {margin-left: 12px;}
+	.headeralt{height:auto;}
+}

@@ -1,0 +1,8 @@
+@media screen and (max-width: 400px) {
+    nav {font-size:11px;}
+    nav a:link{padding:0;}
+    nav ul li#button_home {margin-left: 12px;}
+    .headeralt{height:76px;}
+    form#search_form{float:left;width:100%;}
+    .sosyalan{float:left;padding-left: 15px;}
+}

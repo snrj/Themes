@@ -1,0 +1,27 @@
+.menuyeri { background: #242424; background: -moz-linear-gradient(top, #242424, #1c1c1c); background: -webkit-linear-gradient(top, #242424, #1c1c1c); background: linear-gradient(to bottom, #242424, #1c1c1c); height: 45px; }
+
+h4.catbg, h4.catbg2, h3.catbg, h3.catbg2, .table_list tbody.header td.catbg { background: #6A63E2; background: -moz-linear-gradient(top, #6A63E2 0%, #413BB5 100%); background: -webkit-linear-gradient(top, #6A63E2 0%, #413BB5 100%); background: linear-gradient(to bottom, #6A63E2 0%, #413BB5 100%); padding-right: 9px; border-top-right-radius: 5px; }
+
+.catbg, tr.catbg th.first_th, tr.catbg th.last_th, .catbg2, tr.catbg td, tr.catbg2 td, tr.catbg th, tr.catbg2 th { background: -moz-linear-gradient(top, #6A63E2 0%, #413BB5 100%); background: -webkit-linear-gradient(top, #6A63E2 0%, #413BB5 100%); background: linear-gradient(to bottom, #6A63E2 0%, #413BB5 100%); }
+
+tr.catbg th.first_th { -webkit-border-radius: 5px 0 0 0; -moz-border-radius: 5px 0 0 0; border-radius: 5px 0 0 0; }
+
+tr.catbg th.last_th { -webkit-border-radius: 0 5px 0 0; -moz-border-radius: 0 5px 0 0; border-radius: 0 5px 0 0; }
+
+div.cat_bar { background: #6A63E2; background: -moz-linear-gradient(top, #6A63E2 0%, #413BB5 100%); background: -webkit-linear-gradient(top, #6A63E2 0%, #413BB5 100%); background: linear-gradient(to bottom, #6A63E2 0%, #413BB5 100%); border-top: 1px solid #6A63E2; border-top-left-radius: 5px; border-top-right-radius: 5px; padding-left: 9px; line-height: 35px; overflow: hidden; }
+
+div.title_bar { background: -moz-linear-gradient(top, #4740D6 0%, #645ED6 100%); background: -webkit-linear-gradient(top, #4740D6 0%, #645ED6 100%); background: linear-gradient(to bottom, #4740D6 0%, #645ED6 100%); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding-left: 9px; height: 31px; overflow: hidden; margin-bottom: 1px; }
+
+h4.titlebg, h3.titlebg { background: -moz-linear-gradient(top, #4740D6 0%, #645ED6 100%); background: -webkit-linear-gradient(top, #4740D6 0%, #645ED6 100%); background: linear-gradient(to bottom, #4740D6 0%, #645ED6 100%); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; padding-right: 9px; line-height: 30px; }
+
+tr.titlebg th.first_th { background: -moz-linear-gradient(top, #4740D6 0%, #645ED6 100%); background: -webkit-linear-gradient(top, #4740D6 0%, #645ED6 100%); background: linear-gradient(to bottom, #4740D6 0%, #645ED6 100%); -webkit-border-radius: 5px 0 0 0; -moz-border-radius: 5px 0 0 0; border-radius: 5px 0 0 0; }
+
+tr.titlebg th.last_th { background: -moz-linear-gradient(top, #4740D6 0%, #645ED6 100%); background: -webkit-linear-gradient(top, #4740D6 0%, #645ED6 100%); background: linear-gradient(to bottom, #4740D6 0%, #645ED6 100%); -webkit-border-radius: 0px 5px 0 0; -moz-border-radius: 0px 5px 0 0; border-radius: 0px 5px 0 0; }
+
+.blm { border: 1px solid #6A63E2; border-radius: 6px 6px 0 0; -webkit-box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.39); -moz-box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.39); box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.39); }
+
+#cssmenu > ul > li:hover, #cssmenu ul li.active:hover, #cssmenu ul li.active, #cssmenu ul li.has-sub.active:hover { background: -moz-linear-gradient(top, #6A63E2 0%, #413BB5 100%); background: -webkit-linear-gradient(top, #6A63E2 0%, #413BB5 100%); background: linear-gradient(to bottom, #6A63E2 0%, #413BB5 100%); }
+
+nav a.active { box-shadow: inset 0 1px 0px #6A63E2; color: #4740D6 !important; }
+
+nav a:link:hover { color: #413BB5; box-shadow: inset 0 1px 0px #413BB5; }

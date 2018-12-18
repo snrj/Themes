@@ -1,0 +1,92 @@
+$renk11: #6A63E2;
+$renk22: #413BB5;
+$renk33: #4740D6;
+$renk44: #645ED6;
+
+
+@mixin grident($renk1, $renk2){
+background: -moz-linear-gradient(top, $renk1, $renk2);
+background: -webkit-linear-gradient(top, $renk1, $renk2); 
+background: linear-gradient(to bottom, $renk1, $renk2);
+}
+@mixin boxx-shadow($shadow){
+	-webkit-box-shadow:$shadow;
+	-moz-box-shadow:$shadow;
+	box-shadow:$shadow;
+}
+@mixin transition($transition){
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-ms-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
+}
+@mixin radius($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+.menuyeri{background:#242424;@include grident(#242424, #1c1c1c);height:45px;}
+	
+h4.catbg, h4.catbg2 , h3.catbg , h3.catbg2 , .table_list tbody.header td.catbg,
+ {
+	background:$renk11;
+	@include grident($renk11 0%, $renk22 100%);
+	padding-right: 9px;
+	border-top-right-radius:5px;
+}
+.catbg, .catbg2, tr.catbg td, tr.catbg2 td, tr.catbg th, tr.catbg2 th{@include grident($renk11 0%, $renk22 100%);}
+tr.catbg th.first_th
+{
+	@extend .catbg;
+	@include radius(5px 0 0 0);
+}
+tr.catbg th.last_th
+{
+	@extend .catbg;
+	@include radius(0 5px 0 0);
+}
+
+div.cat_bar
+{
+	background:$renk11;
+	@include grident($renk11 0%, $renk22 100%);
+	border-top:1px solid $renk11;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	padding-left: 9px;
+	line-height:35px;
+	overflow: hidden;
+}
+
+div.title_bar
+{
+	@include grident($renk33 0%, $renk44 100%);
+	@include radius(5px);
+	padding-left: 9px;
+	height: 31px;
+	overflow: hidden;
+	margin-bottom: 1px;
+}
+h4.titlebg, h3.titlebg
+{
+	@include grident($renk33 0%, $renk44 100%);
+	@include radius(5px);
+	padding-right: 9px;
+	line-height: 30px;
+}
+tr.titlebg th.first_th
+{
+	@include grident($renk33 0%, $renk44 100%);
+	@include radius(5px 0 0 0);
+}
+tr.titlebg th.last_th
+{
+	@include grident($renk33 0%, $renk44 100%);
+	@include radius(0px 5px 0 0);
+}
+.blm {border:1px solid $renk11;border-radius:6px 6px 0 0;@include boxx-shadow(0px 2px 12px 0px rgba(50,50,50,0.39));}
+#cssmenu > ul > li:hover,#cssmenu ul li.active:hover,#cssmenu ul li.active,#cssmenu ul li.has-sub.active:hover{@include grident($renk11 0%, $renk22 100%);}
+nav a.active { box-shadow: inset 0 1px 0px $renk11; color: $renk33 !important;}
+nav a:link:hover { color: $renk22; box-shadow: inset 0 1px 0px $renk22; }

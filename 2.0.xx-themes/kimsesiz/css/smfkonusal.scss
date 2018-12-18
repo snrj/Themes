@@ -1,0 +1,219 @@
+/*-------------SMF-DESTEK-KONUSAL YAPIM......------------*/
+@mixin grident($renk1, $renk2){
+background: -moz-linear-gradient(top, $renk1, $renk2);
+background: -webkit-linear-gradient(top, $renk1, $renk2); 
+background: linear-gradient(to bottom, $renk1, $renk2);
+}
+@mixin boxx-shadow($shadow){
+	-webkit-box-shadow:$shadow;
+	-moz-box-shadow:$shadow;
+	box-shadow:$shadow;
+}
+@mixin transition($transition){
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-ms-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
+}
+@mixin radius($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+ul {padding:0;margin:0;list-style:none;}
+header {height:53px;background:#0d0d0d;}
+img.logost{margin-top:8px;margin-left:5px;}
+.gizlilogo {position:absolute;
+	img {position:absolute;@include transition(clip 0.15s linear 0s);clip: rect(auto, 0px, 33px, auto);}
+	.logogizli {float:left;margin-left:5px;margin-top:4px;}
+}
+.fixle {position:fixed;top:0;z-index:1;width:100%;right:0;}
+.logogel img {clip:rect(auto, 131px, 33px, auto);position:relative;}
+.logogit {margin-left:140px;@include transition(margin 0.15s ease-in-out 0s);
+	ul ul {margin-left:-140px;}
+}
+
+.sayfaayar {padding:0 100px;margin:0 auto;}
+.headeralt{background:#0d0d0d;height:35px;}
+/* The navigation list (i.e. linktree) */
+.navigate_section{padding: 0.5em;margin: 0 0 0 0;float:left;color:#fff;
+	ul{display: block;margin: 0;font-size: 0.9em;padding: 4px 0 0.5em 0;overflow: hidden;list-style: none;
+		li	{
+				float: left;
+				padding: 0 0.5em 0 0;
+				font-size: 0.95em;
+				a{
+					color:#E95E18;
+					white-space: pre;
+				}
+			}
+		}
+}
+form#search_form {float:right;padding-top:3px;margin-top:4px;margin-right:10px;background: #dedede url("../images/img/search-icon.png") no-repeat 9px center;@include boxx-shadow(inset 0px 0px 34px -2px rgba(146,145,145,1)); @include radius(10px);line-height:25px;
+    .inputbox{background:none;border:none;outline:none;font-size:14px;line-height:20px;padding-left:30px;}
+}
+
+.menuyeri{background:#242424;@include grident(#242424, #1c1c1c);height:45px;
+
+}
+nav{
+	font-size:15px;
+	font-family:'Oxygen', sans-serif;
+	font-weight:700;
+    list-style: none;
+	ul {padding:0;margin:0;list-style:none;position:relative;margin-left:-10px;transition: margin 0.15s ease-in-out 0s;
+		ul {@include transition(all .2s ease);display:none;position:absolute;top:45px;background:#444243;	@include grident(#444243 0%, #1a1a1a 100%);min-width:140px;padding:0 15px;z-index:1;
+			a {font-size:12px;line-height:35px;}
+			li {
+				width:170px;float:none;display:list-item;position:relative;
+			}
+			ul li {position:relative;top:-60px;left:170px;}
+		}
+		li{display:inline-block;
+			&:hover > ul {display:inherit;}
+			&#button_home {margin-left:20px;}
+		}
+	}
+	a {display:block;text-decoration:none;
+		&.active {box-shadow:inset 0 1px 0px #E95E18;color:#E95E18 !important;}
+		&:visited{color:#ffb189;}
+		&:link{padding:0 3px;color:#fff;text-decoration:none;cursor:pointer; transition: all 0.2s ease 0s;
+			&:hover {color:#E95E18;box-shadow:inset 0 1px 0px #E95E18;}
+		}
+	}
+	li {line-height:46px;
+		> a:after {content: ' +';}
+		> a:only-child:after{ content:'';}
+	}
+}
+h4.catbg, h4.catbg2 , h3.catbg , h3.catbg2 , .table_list tbody.header td.catbg,
+ {
+	background:#444243;
+	@include grident(#444243 0%, #1a1a1a 100%);
+	padding-right: 9px;
+	border-top-right-radius:5px;
+}
+.catbg, .catbg2, tr.catbg td, tr.catbg2 td, tr.catbg th, tr.catbg2 th{@include grident(#444243 0%, #1a1a1a 100%);}
+tr.catbg th.first_th
+{
+	@extend .catbg;
+	@include radius(5px 0 0 0);
+}
+tr.catbg th.last_th
+{
+	@extend .catbg;
+	@include radius(0 5px 0 0);
+}
+
+div.cat_bar
+{
+	background:#444243;
+	@include grident(#444243 0%, #1a1a1a 100%);
+	border-top:1px solid #828081;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	padding-left: 9px;
+	line-height:35px;
+	overflow: hidden;
+}
+
+div.title_bar
+{
+	@include grident(#FFB189 0%, #E95E19 100%);
+	@include radius(5px);
+	padding-left: 9px;
+	height: 31px;
+	overflow: hidden;
+	margin-bottom: 1px;
+}
+h4.titlebg, h3.titlebg
+{
+	@include grident(#FFB189 0%, #E95E19 100%);
+	@include radius(5px);
+	padding-right: 9px;
+	line-height: 30px;
+}
+tr.titlebg th.first_th
+{
+	@include grident(#FFB189 0%, #E95E19 100%);
+	@include radius(5px 0 0 0);
+}
+tr.titlebg th.last_th
+{
+	@include grident(#FFB189 0%, #E95E19 100%);
+	@include radius(0px 5px 0 0);
+}
+h3.titlebg a, h3.titlebg, h4.titlebg, h4.titlebg a
+{
+	color: #f4f4f4;
+}
+h3.titlebg a:hover, h4.titlebg a:hover
+{
+	color: #F99969;
+	text-decoration: none;
+}
+
+.table_grid tr a:link{font:78%/130% "Verdana","Arial","Helvetica",sans-serif;}
+h4.catbg a.toggle img,h3.catbg img.icon, h4.titlebg img.icon{vertical-align: middle;margin: -6.5px 5px 0 0;}
+
+
+.windowbg,.windowbg2{background: linear-gradient(#fff, #e8e8e8);
+	border-top:1px solid #c2c2c2;border-bottom:1px solid #c2c2c2;
+}
+.blm {border:1px solid #262626;border-radius:6px 6px 0 0;@include boxx-shadow(0px 2px 12px 0px rgba(50,50,50,0.39));}
+.windowbg span.topslice,.windowbg span.topslice span,.windowbg2 span.topslice,.windowbg2 span.topslice span{background:#fff;}
+.windowbg span.botslice,.windowbg span.botslice span,.windowbg2 span.botslice,.windowbg2 span.botslice span{background:#c8c8c8;display: block;}
+tr.baslik{background:#ededed;@include boxx-shadow(inset 5px #b1b1b1);line-height:25px;
+	td{padding-left:5px !important;color:#8d8d8d !important;font-size:11px;
+		&.stats {text-align:center;}
+	}
+}
+.blmshadow{@include boxx-shadow(0px 0px 23px -2px rgba(146,145,145,1));}
+.altblm {font-size:11px;color:#d8510d;position:relative;
+	a:link {color: #d8510d;padding-left: 16px;}
+	a:visited{color:#DBA672;}
+	img {position:absolute;top:2px;}
+}
+
+.kabuk{@include boxx-shadow(0px 2px 12px 0px rgba(50,50,50,0.39));@include radius(9px);background:#fff;}
+.kabukistatislik{@extend .kabuk;padding:5px;h4 {width:100%;height:20px;line-height:22.5px;font-size:14px;a img {float:left;}}}
+.kabukziyaretci{@extend .kabuk;padding:5px;h4 {width:100%;height:10px;line-height:13px;font-size:14px; img {float:left;}}}
+.kabuktakvim{@extend .kabuk;padding:5px;}
+.kabuksongnderi{@extend .kabuk;padding:5px;}
+
+.altmenu{@extend .catbg;height:49px; 
+	ul {padding:0;margin:0; 
+			li{float:left;line-height:49px;border-left:1px solid #313030;
+				a {font-size:14px;padding:0 12px;font-weight:600;
+					&:link{color:#f4f4f4; &:hover{color:#F9C17F;text-decoration:none;}}
+				}
+			}
+		}
+	a img {float:left;padding-top:6px;padding-left:5px;padding-right:10px;}
+	}
+.sosyalan {float:right;margin-top:5px;
+	a {padding:0; img {padding:7px 5px 0;}}
+}
+.altacik{background:#111111;color:#D1CBCA;padding:5px 15px;
+	a{
+		&:link,&.new_win:link, &.new_win:visited,&:visited {color:#ED472D;}
+	}
+	.ortagl {text-align:center;}
+}
+.giris{float:right;}
+.gir{border-left:1px solid #232323;
+	a:link {line-height:53px;font-size:15px;padding:0 5px;}
+}
+.kayit{border-left:1px solid #232323;float: right;}
+
+/* Snrj Wordpress Theme Alındı
+------------------------------------------------------- */
+.buttonlist ul{z-index:100;padding:5px;margin:0 0 5px 0;}
+.buttonlist ul li{margin:0 0 0 6px;padding:0;float:left;}
+.buttonlist ul li a{background: linear-gradient(#fff, #e8e8e8);display:block;text-transform:uppercase;cursor:pointer;border:1px solid #ccc;border-right:1px solid #bbb;border-bottom:1px solid #aaa;border-radius:1px;box-shadow:1px 1px 1px rgba(0,0,0,0.1);padding:0 1px;margin:0;overflow:visible;color:#444;font-size:0.8em;}
+.pagesection .buttonlist ul li a{font-size:0.889em;}
+.buttonlist ul li a:hover{color:#af6700;text-decoration:none;border:1px solid #ccc;border-left:1px solid #bbb;border-top:1px solid #aaa;box-shadow:-1px -1px 2px rgba(0,0,0,0.07), -1px -2px 4px rgba(255,255,255,0.33) inset;}
+.buttonlist ul li a span{display:block;height:2.2em;line-height:2.2em;padding:0 8px;}
+.buttonlist ul li a.active{background:#F47200;color:#fff;font-weight:bold;border-radius:3px;border:1px solid #AD3420;text-shadow:1px 1px 3px rgba(0, 0, 0, 0.6);}
+.buttonlist ul li a.active:hover{color:#ffc187;}
