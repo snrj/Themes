@@ -1,0 +1,185 @@
+html {
+	background: #fff;
+}
+body {
+	background: #fff;
+	color: #000;
+}
+hr {
+	background: #abaaa6;
+    background-color: #e4e4e4;
+    box-shadow: 0 1px 0 #bfbfbf inset;
+}
+
+a:link, a:visited, a.new_win:link, a.new_win:visited {
+    color: #000;
+}
+.navigate_section ul li,.info .subject {
+    color: #3a3030;
+    text-shadow: 0px 1px 0px #ccc;
+}
+strong,h1, h2, h3, h4, h5, h6 {
+    color: #292929;
+}
+h1.forumtitle a {
+	color: #797979;
+    text-shadow: 1px 1px 1px #969696;
+}
+.popup_content{
+    color: #9E9E9E;
+}
+.button_submit, .button_reset, .button_link, .topbottom,
+.dropmenu li ul, .top_menu, .dropmenu li li:hover, .button,
+.dropmenu li li:hover>a, .dropmenu li li a:focus, .dropmenu li li a:hover,
+#top_section, #search_form .button_submit, .quickbuttons li,
+.quickbuttons li ul, .quickbuttons li ul li:hover, .quickbuttons ul li a:focus,
+.popup_window, #inner_section {
+    background: #ccc;
+    background-image: linear-gradient(to bottom,#ccc 0%,#f0f4f7 70%);
+}
+.button:hover, .button_submit:hover, .button_reset:hover, .button_link:hover,
+.topbottom:hover,#search_form .button_submit:hover, .quickbuttons li:hover {
+	background: #ccc;
+	background-image: linear-gradient(to bottom, #f0f4f7 0%, #ccc 70%);
+}
+#search_form .input_text, #search_form select, #search_form .button_submit {
+    background: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ccc;
+    box-shadow: none;
+}
+#top_section {
+    border-bottom: 1px solid #eee;
+}
+#wrapper {
+    background: #eee;
+    border: 1px solid #ddd;
+}
+.roundframe {
+    background: #ddd;
+    border: 1px solid #bbb;
+}
+.title_bar {
+    border-right: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    background: #ccc;
+	background: linear-gradient(to bottom, #ccc 0%,#aaa 100%);
+    color: #f0f4f7;
+}
+.navigate_section ul, .popup_content, .up_contain,.snrjcolor-content {
+    background: #eee;
+    background-image: linear-gradient(to bottom,#f0f4f7 0%,#ccc 95%);
+}
+
+.navigate_section ul,.up_contain {
+    border: 1px solid #bbc;
+}
+div.cat_bar {
+    background: #ccc;
+	background: linear-gradient(to bottom, #ccc 0%,#aaa 100%);
+    border-bottom: 1px solid #aaa;
+}
+.sub_bar {
+    border-bottom: 1px solid #444;
+}
+#footer {
+	background: #ceccc7;
+    background-image: linear-gradient(to bottom,#bdbdbd 0%,#b3b3b3 70%);
+    border-top: 3px solid #eee;
+}
+.button_submit, .button_reset, .button_link,.button.active,.button {
+    background: linear-gradient(#ccc,#e4e4e4);
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px #eee;
+    color: #040404;
+    text-shadow: 1px 1px 10px #ddd;
+}
+.button.active {
+    border: 1px solid #eee;
+}
+.button_submit:hover, .button_reset:hover, .button_link:hover,.buttonlist a:hover,.button.active:hover,.button:hover {
+    color: #040404;
+	text-decoration: none;
+    border: 1px solid #eee;
+    box-shadow: none;
+    background: linear-gradient(#e4e4e4,#ccc);
+}
+.pagesection .button {
+    color: #000;
+}
+.generic_list_wrapper, .windowbg, .windowbg2, #forumposts .approvebg, #forumposts .approvebg2,.information {
+	background: #e4e4e4;
+    border: 1px solid #bbc;
+    box-shadow: 0 -2px 2px #eee;
+}
+
+/* Here comes the glory... */
+.windowbg:nth-of-type(even) {
+	background: #ccc;
+}
+.windowbg:nth-of-type(odd) {
+	background: #ddd;
+}
+#topic_container .windowbg, #topic_container .windowbg2 {
+    border: 1px solid #ccc;
+}
+#topic_icons .information, #messageindex .information {
+    border-top: 1px solid #ddd;
+}
+.signature, .attachments, .under_message, .custom_fields_above_signature, .custom_fields_below_signature,.inner {
+    border-top: 1px solid #ddd;
+    box-shadow: 0 1px 0 #888 inset;
+}
+.quickbuttons li,.quickbuttons li a, .quickbuttons li a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.dropmenu li a.active, #top_info li a.active {
+	background: linear-gradient(#ddd,#bbb);
+    color: #000;
+    border: 1px solid #ddd;
+    box-shadow: 0 5px 5px rgba(255,255,255,.2) inset;
+    text-shadow: #bbb
+}
+.dropmenu li a.active:hover, .dropmenu li:hover a.active {
+    color: #333;
+	text-decoration: none;
+	border: 1px solid #ccc;
+	box-shadow: none;
+	background: linear-gradient(#bbb,#ddd);
+}
+.dropmenu li a, #top_info > li > a, #top_info > li > a.open {
+	background: linear-gradient(#bbb,#ddd);
+	border: 1px solid #ddd;
+	color: #000;
+	cursor: pointer;
+	text-decoration: none;
+	text-shadow: #bbb;
+}
+.dropmenu li a:hover, .dropmenu li:hover a, .dropmenu li a:focus, #top_info > li > a:hover, #top_info > li:hover > a, #top_info > li > a.open {
+	background: linear-gradient(#ddd,#bbb);
+	border: 1px solid #ccc;
+	color: #333;
+	cursor: pointer;
+	text-decoration: none;
+	text-shadow: 1px 1px 3px #bbb);
+}
+.dropmenu li ul, .top_menu {
+    border: solid 1px #444;
+    border-left: solid 1px #555;
+    border-top: solid 1px #53575c;
+}
+.dropmenu li:hover li a, .dropmenu li li a {
+    color: #000;
+}
+.dropmenu li li:hover>a, .dropmenu li li a:focus, .dropmenu li li a:hover {
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #666;
+    border-top: 1px solid #444;
+}
