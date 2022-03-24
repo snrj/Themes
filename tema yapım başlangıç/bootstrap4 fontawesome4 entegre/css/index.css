@@ -1351,7 +1351,7 @@ fieldset.merge_options {
 
 /* Styles for the login areas.
 ------------------------------------------------------- */
-.login {
+#main_content_section div.login {
 	width: 540px;
 	max-width: 100%;
 	margin: 0 auto;
